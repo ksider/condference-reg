@@ -1,0 +1,294 @@
+// main: style.less
+
+.plenary_wrap {
+    height: 100%;
+    overflow: hidden;
+    background-color: #1abc9c;
+    
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    
+    justify-content: space-between;
+   
+    align-items: stretch;
+    align-items: baseline;
+    align-items: flex-start;
+    
+     align-items: center;
+    flex-wrap: wrap;
+    
+    .plenary-head {
+        width: 100%;
+        padding: 0.5em;
+        font-size: 2.5em;
+        color: #fff;
+        text-align: center;
+        font-family: 'PT Serif';
+        span {
+            display: block;
+            font-size: 0.5em;
+            color: #f1c40f;
+            letter-spacing: 0.1em;
+        }
+    }
+    
+    .plenary_block {
+        
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    
+        
+        align-items: center;
+        justify-content: space-between;
+        justify-content: center;
+        justify-content: flex-end;
+        
+        flex-wrap: wrap;
+        
+        .plenary_report {
+            
+            
+            color: #fff;
+            padding: 2em;
+            width: 50%;
+            
+       //     &.lipanov {margin: 0 25%;}
+            
+            .plenary_photo-wrap {
+                padding-right: 2em;
+            }
+            
+
+            
+            .plenary_photo {
+                .bgc;
+                
+                padding-top: 100%;
+                &.lipanov {background-image: url('http://i1.wp.com/mkmk.ras.ru/wp-content/uploads/2014/12/DSC_8010.jpg?resize=2832%2C4256');}
+                &.levin {background-image: url('http://www.ras.ru/FStorage//download.aspx?id=841b9553-2f09-4799-8e9d-0db52c7c6e7a');}
+                &.movchan {background-image: url('http://i1.wp.com/mkmk.ras.ru/wp-content/uploads/2014/12/DSC6869.jpg?fit=1024%2C1024');}
+                &.lurie {background-image: url('http://i0.wp.com/mkmk.ras.ru/wp-content/uploads/2014/11/DSC_7847.jpg?resize=2103%2C3155');}
+                &.bosh {background-image: url('http://www.famous-scientists.ru/photo/image3576.jpg');}
+                &.myagkov {background-image: url('http://i2.wp.com/mkmk.ras.ru/wp-content/uploads/2015/10/DSC6956.jpg?resize=619%2C928');}
+                
+               border: 6px solid #1abc9c; 
+               
+               box-shadow: 0 0 0 4px #f1c40f; 
+                
+                
+  border-top-left-radius: 59%;
+  border-top-right-radius: 52%;
+  border-bottom-left-radius: 59%;
+  border-bottom-right-radius: 56%;               
+;
+                
+            }
+            
+&:nth-child(2n) .plenary_photo{
+  border-top-left-radius: 62%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 52%;
+  border-bottom-right-radius: 59%;
+            } 
+&:nth-child(3n) .plenary_photo{
+ border-top-left-radius: 40%;
+  border-top-right-radius: 69%;
+  border-bottom-left-radius: 55%;
+  border-bottom-right-radius: 46%
+            } 
+&:nth-child(5n) .plenary_photo{
+  border-top-left-radius: 50%;
+  border-top-right-radius: 59%;
+  border-bottom-left-radius: 52%;
+  border-bottom-right-radius: 56%;
+            } 
+&:nth-child(7n) .plenary_photo{
+  border-top-left-radius: 40%;
+  border-top-right-radius: 69%;
+  border-bottom-left-radius: 55%;
+  border-bottom-right-radius: 46%;
+            } 
+            
+&:nth-child(11n) .plenary_photo{
+      border-top-left-radius: 40%;
+  border-top-right-radius: 69%;
+  border-bottom-left-radius: 55%;
+  border-bottom-right-radius: 46%;
+            } 
+            
+            .plenary_position {}
+            .plenary_name {
+                font-size: 2em;
+              //  font-family: 'PT Serif';
+              font-weight: bold;
+            }
+            .plenary_title {
+                font-size: 1.3em;
+                
+            }
+            
+        }
+    }
+    
+}
+
+
+
+.day_wrap {
+    height: 100%;
+    overflow: hidden;
+    
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    
+    
+    .zal_list {
+        height: 100%;
+        overflow-y: scroll;
+        position: relative;
+        width: 50%;
+        min-width: 25%;
+        overflow: hidden;
+        &:nth-child(3) {
+            width: 20%;
+            
+            ul {
+                li {
+                    width: 98%;
+                }
+            }
+            
+        }
+        
+        .zal_header {
+            position: fixed;
+            top: 0; bottom: 0;
+            width: 0.6em;
+            text-align: center;
+            color: #fff;
+            text-indent: -9999px;
+         }
+           &:before {
+               position: absolute;
+               top: 0;right: 0;
+               
+               
+               color: #fff;
+               padding: 1em;
+        }
+        
+            
+            &.red-zal {
+                border: 0.5em solid #e74c3c;
+                 &:before {
+                  content: 'каб. 127';
+                  background-color: #e74c3c;
+                }
+              }	
+            &.yellow-zal {
+                border: 0.5em solid #27ae60;
+            }
+            &.purple-zal {
+                border: 0.5em solid #8e44ad;
+              &:before {
+                  content: 'Биомеханика';
+                  background-color: #8e44ad;
+                }
+            }
+            &.conzal {
+               border: 0.5em solid  #2c3e50; 
+             &:before {
+                 content: 'Конференц зал';
+                 background-color: #2c3e50;
+                }
+            }
+         
+        
+        ul {
+            padding: 0;
+            padding-top: 3.2em;
+            margin: 0;
+            
+            .report_sect_titel {
+                padding: 1em;
+                font-weight: bold;
+                width: 100%;
+                text-align: center;
+            }
+           
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+             
+            
+            li {
+               display: block;
+               display: inline-block;
+                width: 48%; 
+                font-size: 0.8em;
+                padding: 1em;
+                background-color: #ecf0f1;
+                margin: 1%;
+               
+                .report_ttl {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    flex-wrap: wrap;
+                    padding: 0.2em 0;
+                    .report_author {
+                        width: 80%;
+                        font-weight: bold;
+                    }
+                    .report_time {
+                        width: 20%;
+                        text-align: center;
+                        background-color: #fff;
+                        box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
+                    }
+                    
+                    .report_titel {
+                        color: #999; 
+                     }
+                    
+                }
+                
+
+            }
+        }
+        
+    }
+    
+}

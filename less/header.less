@@ -1,0 +1,148 @@
+// main: style.less
+
+
+#navig.gettop {
+    #searchform {
+    background: transparent;
+    color: #fff; 
+        input[type=search] {
+            background: transparent;
+            color: #fff; 
+        } 
+        input[type=search] {border: 1px solid #fff;}
+        input[type=submit] {color: #fff;}
+    }
+    
+    a {
+      color:#fff;
+    }
+    
+ .logoblock a.logo {
+  border-left: 0px solid #fff;
+  padding-left: 1em;
+    
+  display: inline-block;
+  position: relative;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        left: -3px; top: 0;bottom: 0;
+        width: 4px;
+        background-color: #fff;
+        .animation;
+        transform: rotate(0deg);
+    }
+     
+     &:hover:before {
+         transform: rotate(360deg);
+     }
+  }
+}
+
+
+.bid-parent {
+   padding: 2em 0;
+   position: relative;
+   background-color: @whitgray;
+
+    
+    .mkmk_logo {
+        
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    
+    -ms-align-items: stretch;
+    align-items: stretch;
+    
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;  
+
+        position: relative;
+        z-index: 3;
+        color: #313131;
+        text-align: left;
+        font-family: 'PT Mono', Verdana, monospace;
+        
+    
+
+        
+        .mkmk_logo-block {
+            div {
+                margin: -1px;
+                
+    .max(768px, { margin: 0; });
+    
+                
+                span {
+                    display: inline-block;
+                    border: 1px solid #313131;  
+                    
+                    padding: 1em; 
+                    position: relative;
+                    color: #333;
+
+            a {
+              position: absolute;
+              top: 0;bottom: 0;right: 0;left: 0;
+              &:hover {
+                    background-color:rgba(238,238,238,0.4);
+                    color: #313131;}
+              }
+                    
+                    } 
+                
+                 } 
+            
+        .mkmk_iam {
+            .upper(1em);
+            span {padding: 0.5em;}
+            }
+
+        .mkmk_name {
+               .upper(1em);
+               span {padding: 0.5em;}
+                  }
+         }  
+        
+     
+.mkmk_date {
+           display: -webkit-flex;
+           display: -moz-flex;
+           display: -ms-flex;
+           display: -o-flex;
+           display: flex; 
+          
+            -ms-align-items: center;
+           align-items: center; 
+            color: #313131;
+           
+   //         background-color: #fff;
+    
+            font-size: 1.5em;
+    //        border: 2px solid #313131;  
+            
+    
+    
+            margin: -2px;
+            
+            span {
+                padding: .5em;
+                
+            }
+        .max(768px, { font-size: 1em; });
+    
+            
+            
+        }
+        
+    } 
+    
+
+}
